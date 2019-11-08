@@ -1,0 +1,66 @@
+body{
+   background-color: black;
+}
+.header{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bowlby One SC', cursive;
+    color: rgb(255,165,0);
+    margin-top: 2%; 
+}
+
+#app{
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 2%;
+    border: 3px solid rgb(203, 105, 189) ;
+    border-radius: 50px;
+    display: flex;
+   
+
+}
+
+.main-content{
+    margin: 0 auto;
+}
+
+.form-style{
+    padding-top: 3%;
+ 
+}
+
+.list-item{
+    text-decoration: none;
+    color: white;
+}
+
+.delete{
+    text-decoration: none;
+    float: right;
+    color: rgb(182,141, 252);
+    margin-left: 3%;
+}
+
+.edit-button{
+    float: right;
+    color: rgb(182,141, 252);
+}
+
+#list-todo{
+    margin-top: 1%;
+    font-size: 25px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.color-button{
+    color:  rgb(255,165,0);
+    border: 1px solid  rgb(255,165,0);
+}
+
+.color-button:hover{
+    background-color: black;
+    color:  rgb(147, 96, 1);
+    border: 1px solid  rgb(255,165,0); 
+}
