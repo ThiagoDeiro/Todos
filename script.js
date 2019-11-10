@@ -2,7 +2,7 @@ var listElement = document.querySelector('#app ul');
 var inputElemet = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
-var todos = JSON.parse(localStorage.getItem('list_todos') || []);
+var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 function renderTodos(){
     listElement.innerHTML = '';
@@ -36,35 +36,36 @@ function renderTodos(){
 
 
 var button = document.getElementById("button");
-var todoText = inputElemet.value;
+var todoText = document.getElementById("text");
 var task = "new";
 var posEdit = "";
 
 
 function addTodo(){
     var todoText = inputElemet.value;
-    if(todoText === ''){
+
+    if (task === "existent") {
+        replaceTodo()
+    } else if (todoText === '') {
         alert('input must be filled')
-    }else{ 
-    todos.push(todoText)
-    inputElemet.value = '';
     
+    }else{ 
+        todos.push(todoText)
+        inputElemet.value = '';
     }
+   
     renderTodos();
     saveToStorage();
 }
 buttonElement.onclick = addTodo;
 renderTodos();
 
-
-
 function editTodo(pos){
-    var textTodo = document.getElementById("text");
-    textTodo.value = todos[pos];
+    var todoText = document.getElementById("text");
+    todoText.value = todos[pos];
     task = "existent";
     posEdit = pos;
 }
-
 
 function replaceTodo(){
     var startIndex = posEdit;
@@ -90,4 +91,3 @@ function saveToStorage(){
 
     localStorage.setItem('list_todos', JSON.stringify(todos));
 }
-
