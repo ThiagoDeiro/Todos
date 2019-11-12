@@ -34,7 +34,6 @@ function renderTodos(){
     }
 }
 
-
 var button = document.getElementById("button");
 var todoText = document.getElementById("text");
 var task = "new";
