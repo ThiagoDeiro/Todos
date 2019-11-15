@@ -33,7 +33,7 @@ function renderTodos(){
         listElement.appendChild(todoElement);
     }
 }
-// **********
+// **************************
 
 var button = document.getElementById("button");
 var todoText = document.getElementById("text");
