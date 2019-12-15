@@ -3,7 +3,7 @@ var inputElemet = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
-
+// fix the logic 
 function renderTodos(){
     listElement.innerHTML = '';
     for (todo of todos){
@@ -40,7 +40,7 @@ var todoText = document.getElementById("text");
 var task = "new";
 var posEdit = "";
 
-
+// ++++++++++++++++++++++++++++++++++++++++++++++
 function addTodo(){
     var todoText = inputElemet.value;
 
