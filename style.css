@@ -1,6 +1,6 @@
 
 /* style */
-/* make some changes on the ui! looks shit!!! */
+/* /* make some changes on the ui */
 body{
    background-color: black;
 }
@@ -99,3 +99,6 @@ body{
     color:  rgb(147, 96, 1);
     border: 1px solid  rgb(255,165,0); 
 }
+
+
+/* add some more styling  */
