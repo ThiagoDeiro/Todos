@@ -1,5 +1,4 @@
 
-/* style */
 body{
    background-color: black;
 }
@@ -87,7 +86,6 @@ body{
     text-align: left;
     margin-right: 16%;
 }
-/* /* ******* */
 
 .color-button{
     color:  rgb(255,165,0);
@@ -99,6 +97,3 @@ body{
     color:  rgb(147, 96, 1);
     border: 1px solid  rgb(255,165,0); 
 }
-
-
-/* add some more styling  */
